@@ -11,6 +11,8 @@
 */
 
 var TinderGeolocation = function() {
+  var callback;
+
   function onSuccess(position) {
     callback(position.coords);
   }
@@ -19,7 +21,8 @@ var TinderGeolocation = function() {
     throw new Error("Could not get latitude and longitude");
   }
 
-  this.geolocate = function(callback) {
+  this.geolocate = function(callbackFunction) {
+    callback = callbackFunction;
     if (navigator.geolocation) {
       // get permission
       navigator.geolocation.getCurrentPosition(onSuccess, onError);
