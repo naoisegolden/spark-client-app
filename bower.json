@@ -1,0 +1,17 @@
+{
+  "name": "spark-client-app",
+  "version": "0.0.0",
+  "homepage": "https://github.com/naoisegolden/spark-client-app",
+  "authors": [
+    "Naoise Golden <naoise.golden@gmail.com> (http://goldensantos.com)"
+  ],
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
