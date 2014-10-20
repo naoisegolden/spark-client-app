@@ -1,0 +1,15 @@
+$padding: 25px;
+
+body {
+  width: 600px;
+  margin: 0 auto;
+}
+
+ul {
+  border: 1px solid black;
+  padding: $padding;
+
+  li {
+    border-top: 1px solid black;
+  }
+}
